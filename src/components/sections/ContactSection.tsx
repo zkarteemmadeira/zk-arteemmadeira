@@ -58,7 +58,7 @@ const ContactSection = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <MapPin size={16} className="text-wood" />
-                  <span>Minas Gerais, Brasil</span>
+                  <span>São Paulo, Brasil</span>
                 </div>
                 <span className="hidden sm:block w-px h-4 bg-border" />
                 <div className="flex items-center gap-2">
