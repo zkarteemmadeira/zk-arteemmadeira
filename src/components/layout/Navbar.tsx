@@ -56,7 +56,7 @@ const Navbar = () => {
             to="/" 
             className="font-serif text-xl md:text-2xl font-semibold text-heading tracking-wide hover:text-wood transition-colors duration-300"
           >
-            Arte de Minas
+            ZK Arte em Madeira
           </Link>
 
           {/* Desktop Navigation */}

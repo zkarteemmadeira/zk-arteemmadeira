@@ -26,8 +26,8 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <p className="body-base text-body leading-[1.9]">
-              A <strong className="text-heading font-medium">Arte de Minas Móveis</strong> nasceu do 
-              amor pela tradição mineira e do respeito profundo pela madeira como matéria-prima nobre. 
+              A <strong className="text-heading font-medium">ZK Arte em Madeira</strong> nasceu do 
+              amor pela madeira como matéria-prima nobre. 
               Cada peça que produzimos carrega consigo a história de uma família dedicada ao ofício 
               da marcenaria, transmitido de geração em geração.
             </p>
@@ -40,7 +40,7 @@ const AboutSection = () => {
             </p>
 
             <p className="body-base text-body leading-[1.9]">
-              Trabalhamos com madeiras selecionadas, respeitando os veios naturais e as características 
+              Trabalhamos com madeiras selecionadas, respeitando as características 
               únicas de cada tora. O resultado são móveis que não apenas mobiliam, mas contam histórias 
               e trazem a alma da madeira para dentro do seu lar.
             </p>

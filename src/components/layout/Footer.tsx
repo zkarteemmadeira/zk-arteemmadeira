@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, Facebook, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,14 +8,24 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <Link 
-            to="/" 
+            to='/' 
             className="font-serif text-xl font-semibold text-heading tracking-wide"
           >
-            Arte de Minas Móveis
+            ZK Arte em Madeira
           </Link>
 
           {/* Social Links */}
           <div className="flex items-center gap-6">
+            <a
+              href="https://wa.me/0000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-muted-foreground hover:text-wood transition-colors duration-300"
+              aria-label="Instagram"
+            >
+              <MessageCircle size={22} />
+            </a>
+
             <a
               href="https://instagram.com"
               target="_blank"
@@ -38,7 +48,9 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Arte de Minas Móveis. Todos os direitos reservados.
+            © {new Date().getFullYear()} ZK Arte em Madeira. Todos os direitos reservados.
+            <br></br>
+            © Site desenvolvido por Pack Digital Services.
           </p>
         </div>
       </div>

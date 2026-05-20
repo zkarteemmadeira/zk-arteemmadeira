@@ -12,7 +12,7 @@ const HeroSection = () => {
           alt="Móveis em madeira de alta qualidade" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/50 to-background/30" />
       </div>
 
       <div className="container-premium relative z-10 pt-24 pb-16">
@@ -79,7 +79,7 @@ const HeroSection = () => {
             className="mt-16 flex items-center gap-3 text-muted-foreground"
           >
             <span className="w-8 h-px bg-border" />
-            <span className="text-xs uppercase tracking-[0.3em]">Desde a tradição mineira</span>
+            <span className="text-xs uppercase tracking-[0.3em]"></span>
             <span className="w-8 h-px bg-border" />
           </motion.div>
         </div>
