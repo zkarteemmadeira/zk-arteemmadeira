@@ -4,18 +4,18 @@ import SectionHeading from '../ui/SectionHeading';
 
 const reviews = [
   {
-    name: 'Renato Pacini Ribeiro',
-    text: 'Comprei uma mesa c 6 cadeiras de Peroba Rosa, ficou show, muito bonita, ótimo acabamento, cor linda, preço bom!!!',
+    name: 'Pauline Lopes',
+    text: 'O serviço prestado por eles é de excelência! Produtos de qualidade (já comprei as cadeiras pavão e o banco que vira mesa premium) , entrega rápida! Atendimento maravilhoso! Recomendo muito! 👏🏼',
     rating: 5,
   },
   {
-    name: 'Casa de Marias',
-    text: 'Móveis no melhor preço que encontrei....qualidade excelente... atendimento perfeito... super recomendo... obrigada',
+    name: 'Jessica Lorrayne',
+    text: 'Compramos um banco que vira mesa com eles e simplesmente amamos, lindo, com um acabamento bem diferenciado em relação aos outros oferecidos em outros locais, o tampo é maior também o que é muito bom. Atendimento pelo WhatsApp muito cordial, sempre tirou todas as minhas dúvidas, e a entrega foi antes do previsto.',
     rating: 5,
   },
   {
-    name: 'Monica C.leite',
-    text: 'Já sou cliente dessa loja, adoro todos os móveis lindos e com ótimo acabamento. E tem um super atendimento ao cliente. Indico para todos. Vcs vão amar.',
+    name: 'Eloana Galvão',
+    text: 'Amei de paixão meu banco que vira mesa, que ótima escolha que fiz, produto de qualidade e confortável demais, sou de Goiânia, chegou rapidinho e tudo certinho os vendedores são excelentes, atenção do início ao fim. Indico de olhos fechados. Empresa exemplar, de confiança!',
     rating: 5,
   },
 ];
@@ -47,11 +47,11 @@ const ReviewsSection = () => {
             ))}
           </div>
           <div className="text-center">
-            <span className="font-serif text-2xl font-semibold text-heading">4,6</span>
+            <span className="font-serif text-2xl font-semibold text-heading">4,9</span>
             <span className="text-muted-foreground ml-2">no Google</span>
           </div>
           <span className="text-muted-foreground">•</span>
-          <span className="text-muted-foreground">Mais de 10 avaliações</span>
+          <span className="text-muted-foreground">+ 25 avaliações</span>
         </motion.div>
 
         {/* Reviews Grid */}

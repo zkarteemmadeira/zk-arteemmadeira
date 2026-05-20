@@ -1,37 +1,48 @@
-import { motion } from 'framer-motion';
+import { motion, px } from 'framer-motion';
 import SectionHeading from '../ui/SectionHeading';
-import { Armchair, Table, RockingChair, Coffee, MonitorDot, Bath } from 'lucide-react';
+import cadeiraEssencia from '@/assets/cadeira-adirondack-modelo-essencia.jpg';
+import cadeiraClassico from '@/assets/cadeira-adirondack-modelo-classico.jpg';
+import cadeiraPremium from '@/assets/cadeira-adirondack-modelo-premium.jpg';
+import bancoPremium from '@/assets/modelo-premium-eucalipto-banco.jpg';
+import bancoClassico from '@/assets/modelo-classico-eucalipto-banco.jpg';
+import bancoTradicional from '@/assets/modelo-tradicional-pinus-banco.jpg';
 
 const products = [
   {
-    name: 'Cadeiras',
-    description: 'Conforto e elegância para sua mesa',
-    icon: Armchair,
+    name: 'Cadeira Adirondack Modelo Essência',
+    icon: cadeiraEssencia,
   },
   {
-    name: 'Mesas',
-    description: 'O centro da convivência familiar',
-    icon: Table,
+    name: 'Cadeira Adirondack Modelo Clássico',
+    icon: cadeiraClassico,
   },
   {
-    name: 'Bancos',
-    description: 'Versatilidade com estilo',
-    icon: RockingChair,
+    name: 'Cadeira Adirondack Modelo Premium',
+    icon: cadeiraPremium,
   },
   {
-    name: 'Mesinhas',
-    description: 'Detalhes que fazem a diferença',
-    icon: Coffee,
+    name: 'Modelo Premium Eucalipto - Versão Banco',
+    icon: bancoPremium,
+  },
+  {
+    name: 'Modelo Classico Eucalipto - Versão Banco',
+    icon: bancoClassico,
+  },
+  {
+    name: 'Modelo Tradicional Pinus - Versão Banco',
+    icon: bancoTradicional,
+  },
+  {
+    name: 'Banco que Vira mesa - Modelo Premium Eucalipto',
+    icon: bancoPremium,
   },
   {
     name: 'Escrivaninhas',
-    description: 'Para seu espaço de trabalho',
-    icon: MonitorDot,
+    icon: cadeiraPremium,
   },
   {
     name: 'Pias de Banheiro',
-    description: 'Madeira em ambientes únicos',
-    icon: Bath,
+    icon: cadeiraPremium,
   },
 ];
 
@@ -54,33 +65,19 @@ const ProductsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group p-6 md:p-8 bg-card border border-border hover:border-wood/30 transition-all duration-300 text-center"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 mb-4 text-wood/70 group-hover:text-wood transition-colors duration-300">
-                <product.icon size={28} strokeWidth={1.5} />
+              <div className="w-42 h-42 mb-4 overflow-hidden rounded-md">
+                <img 
+                  src={product.icon} 
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <h3 className="font-serif text-lg md:text-xl font-medium text-heading mb-2">
                 {product.name}
               </h3>
-              <p className="text-sm text-muted-foreground">
-                {product.description}
-              </p>
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center"
-        >
-          <p className="body-base text-body leading-relaxed">
-            Trabalhamos com madeira selecionada, acabamento refinado e produção cuidadosa, 
-            garantindo móveis <strong className="text-heading font-medium">duráveis</strong>, 
-            <strong className="text-heading font-medium"> elegantes</strong> e 
-            <strong className="text-heading font-medium"> únicos</strong>.
-          </p>
-        </motion.div>
       </div>
     </section>
   );
