@@ -7,6 +7,7 @@ const navLinks = [
   { name: 'Início', href: '/#inicio' },
   { name: 'Quem Somos', href: '/#quem-somos' },
   { name: 'Produtos', href: '/#produtos' },
+  { name: 'Dúvidas Frequentes', href: '/#duvidas-frequentes' },
   { name: 'Avaliações', href: '/#avaliacoes' },
   { name: 'Contato', href: '/#contato' },
 ];
@@ -60,7 +61,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-10">
+          <div className="hidden lg:flex items-center justify-center flex-1 gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.name}
@@ -71,13 +72,14 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-wood transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
-            <Link
-              to="/catalogo"
-              className="ml-4 px-6 py-2.5 text-sm font-medium border border-wood/30 text-wood hover:bg-wood hover:text-primary-foreground transition-all duration-300 rounded-sm"
-            >
-              Ver Catálogo
-            </Link>
           </div>
+
+          <Link
+            to="/catalogo"
+            className="hidden lg:inline-flex px-6 py-2.5 text-sm font-medium border border-wood/30 text-wood hover:bg-wood hover:text-primary-foreground transition-all duration-300 rounded-sm"
+          >
+            Ver Catálogo
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
