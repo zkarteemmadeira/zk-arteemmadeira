@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '@/assets/zk-logo.png';
 
 const navLinks = [
   { name: 'Início', href: '/#inicio' },
@@ -13,56 +14,50 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const handleNavClick = (href: string) => {
-  setIsMobileMenuOpen(false);
+    setIsMobileMenuOpen(false);
 
-  if (href.startsWith('/#')) {
-    const sectionId = href.substring(2);
+    if (href.startsWith('/#')) {
+      const sectionId = href.substring(2);
 
-    if (location.pathname !== '/') {
-      window.location.href = href;
-    } else {
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
+      if (location.pathname !== '/') {
+        window.location.href = href;
+      } else {
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
 
-        if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth',
-          });
-        }
-      }, 100);
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+            });
+          }
+        }, 100);
+      }
     }
-  }
-};
+  };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-background/90 backdrop-blur-md shadow-subtle' 
-          : 'bg-transparent'
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[hsl(var(--wood-dark)/0.95)] backdrop-blur-md shadow-elevated">
       <div className="container-premium">
         <div className="flex items-center justify-between h-20 md:h-24">
+
           {/* Logo */}
-          <Link 
-            to="/" 
-            className="font-serif text-xl md:text-2xl font-semibold text-heading tracking-wide hover:text-wood transition-colors duration-300"
+          <Link
+            to="/"
+            className="flex items-center gap-3 hover:opacity-80 transition-all duration-300"
           >
-            ZK Arte em Madeira
+            <img
+              src={logo}
+              alt="ZK Arte em Madeira"
+              className="h-12 md:h-14 w-auto object-contain"
+            />
+
+            <span className="font-serif text-xl md:text-2xl font-semibold text-white tracking-wide">
+              Arte em Madeira
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -71,17 +66,19 @@ const Navbar = () => {
               <button
                 key={link.name}
                 onClick={() => handleNavClick(link.href)}
-                className="relative text-sm font-medium text-body hover:text-wood transition-colors duration-300 group"
+                className="relative text-sm font-medium text-white/90 hover:text-white transition-colors duration-300 group"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-wood transition-all duration-300 group-hover:w-full" />
+
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-white transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
           </div>
 
+          {/* Desktop CTA */}
           <Link
             to="/catalogo"
-            className="hidden lg:inline-flex px-6 py-2.5 text-sm font-medium border border-wood/30 text-wood hover:bg-wood hover:text-primary-foreground transition-all duration-300 rounded-sm"
+            className="hidden lg:inline-flex px-6 py-2.5 text-sm font-medium border border-white/30 text-white hover:bg-white hover:text-[hsl(var(--wood-dark))] transition-all duration-300 rounded-sm"
           >
             Ver Catálogo
           </Link>
@@ -89,7 +86,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-heading hover:text-wood transition-colors"
+            className="lg:hidden p-2 text-white hover:text-white/80 transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -105,22 +102,25 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-background/98 backdrop-blur-md border-t border-border"
+            className="lg:hidden bg-[hsl(var(--wood-dark)/0.98)] backdrop-blur-md border-t border-white/10"
           >
             <div className="container-premium py-6 flex flex-col gap-4">
+
               {navLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => handleNavClick(link.href)}
-                  className="text-left py-2 text-base font-medium text-body hover:text-wood transition-colors"
+                  className="text-left py-2 text-base font-medium text-white/90 hover:text-white transition-colors"
                 >
                   {link.name}
                 </button>
               ))}
+
+              {/* Mobile CTA */}
               <Link
                 to="/catalogo"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-2 w-full text-center px-6 py-3 text-sm font-medium border border-wood/30 text-wood hover:bg-wood hover:text-primary-foreground transition-all duration-300 rounded-sm"
+                className="mt-2 w-full text-center px-6 py-3 text-sm font-medium border border-white/30 text-white hover:bg-white hover:text-[hsl(var(--wood-dark))] transition-all duration-300 rounded-sm"
               >
                 Ver Catálogo
               </Link>

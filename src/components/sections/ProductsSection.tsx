@@ -1,6 +1,6 @@
 import { motion, px } from 'framer-motion';
 import SectionHeading from '../ui/SectionHeading';
-import cadeiraEssencia from '@/assets/cadeira-adirondack-modelo-essencia.jpg';
+import cadeiraEssencia from '@/assets/catalogo/catalago-9.jpg';
 import cadeiraClassico from '@/assets/cadeira-adirondack-modelo-classico.jpg';
 import cadeiraPremium from '@/assets/cadeira-adirondack-modelo-premium.jpg';
 import bancoPremium from '@/assets/modelo-premium-eucalipto-banco.png';
