@@ -26,21 +26,26 @@ const Navbar = () => {
   }, []);
 
   const handleNavClick = (href: string) => {
-    setIsMobileMenuOpen(false);
-    
-    if (href.startsWith('/#')) {
-      const sectionId = href.substring(2);
-      
-      if (location.pathname !== '/') {
-        window.location.href = href;
-      } else {
+  setIsMobileMenuOpen(false);
+
+  if (href.startsWith('/#')) {
+    const sectionId = href.substring(2);
+
+    if (location.pathname !== '/') {
+      window.location.href = href;
+    } else {
+      setTimeout(() => {
         const element = document.getElementById(sectionId);
+
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView({
+            behavior: 'smooth',
+          });
         }
-      }
+      }, 100);
     }
-  };
+  }
+};
 
   return (
     <nav

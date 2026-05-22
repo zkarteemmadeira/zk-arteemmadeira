@@ -21,7 +21,7 @@ const ContactSection = () => {
           <div className="flex flex-col items-center gap-8">
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/555192438775?text=Olá,%20vim%20do%20site%20e%20quero%20saber%20mais!"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-4 bg-wood text-primary-foreground font-medium text-sm tracking-wide hover:bg-wood-dark transition-all duration-300 group w-full justify-center"
@@ -33,7 +33,7 @@ const ContactSection = () => {
             {/* Social Links */}
             <div className="flex items-center gap-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/zk_arteemmadeira/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-body hover:text-wood transition-colors duration-300"
@@ -43,7 +43,7 @@ const ContactSection = () => {
               </a>
               <span className="w-px h-4 bg-border" />
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/zkartemadeira/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-body hover:text-wood transition-colors duration-300"
