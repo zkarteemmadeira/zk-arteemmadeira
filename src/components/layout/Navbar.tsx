@@ -54,10 +54,6 @@ const Navbar = () => {
               alt="ZK Arte em Madeira"
               className="h-12 md:h-14 w-auto object-contain"
             />
-
-            <span className="font-serif text-xl md:text-2xl font-semibold text-white tracking-wide">
-              Arte em Madeira
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
