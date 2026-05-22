@@ -1,4 +1,5 @@
  import { motion } from 'framer-motion';
+ import { useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactSection from '@/components/sections/ContactSection';
@@ -10,6 +11,8 @@ import img5 from '@/assets/catalogo/catalago-5.jpg'
 import img6 from '@/assets/catalogo/catalago-6.jpg'
 import img7 from '@/assets/catalogo/catalago-7.jpg'
 import img8 from '@/assets/catalogo/catalago-8.jpg'
+
+
 
 const catalogProducts = [
   { name: '', 
@@ -54,6 +57,10 @@ const catalogProducts = [
 ];
 
 const Catalogo = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="min-h-screen">
       <Navbar />
