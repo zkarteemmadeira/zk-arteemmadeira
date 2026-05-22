@@ -11,6 +11,11 @@ import img5 from '@/assets/catalogo/catalago-5.jpg'
 import img6 from '@/assets/catalogo/catalago-6.jpg'
 import img7 from '@/assets/catalogo/catalago-7.jpg'
 import img8 from '@/assets/catalogo/catalago-8.jpg'
+import img9 from '@/assets/catalogo/catalago-9.jpg'
+import img10 from '@/assets/catalogo/catalago-10.jpg'
+import img11 from '@/assets/catalogo/catalago-11.jpg'
+import img12 from '@/assets/catalogo/catalago-12.jpg'
+
 
 
 
@@ -54,13 +59,33 @@ const catalogProducts = [
      category: 'Banco que Vira Mesa',
      image: img8
     },
+
+    { name: '',
+     category: 'Cadeiras',
+     image: img9
+    },
+
+  { name: '',
+     category: 'Cadeiras',
+     image: img10
+    },
+     
+  { name: '',
+     category: 'Banco que Vira Mesa',
+     image: img11
+    },
+
+  { name: '',
+     category: 'Banco que Vira Mesa',
+     image: img12
+    },
 ];
 
 const Catalogo = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div className="min-h-screen">
       <Navbar />
