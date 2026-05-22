@@ -63,7 +63,7 @@ const ContactSection = () => {
                 <span className="hidden sm:block w-px h-4 bg-border" />
                 <div className="flex items-center gap-2">
                   <Phone size={16} className="text-wood" />
-                  <span>(00) 00000-0000</span>
+                  <span>(51) 99243-8775</span>
                 </div>
               </div>
             </div>

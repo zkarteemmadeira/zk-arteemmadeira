@@ -68,18 +68,6 @@ const HeroSection = () => {
               </svg>
             </Link>
           </motion.div>
-
-          {/* Decorative element */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="mt-16 flex items-center gap-3 text-muted-foreground"
-          >
-            <span className="w-8 h-px bg-border" />
-            <span className="text-xs uppercase tracking-[0.3em]"></span>
-            <span className="w-8 h-px bg-border" />
-          </motion.div>
         </div>
       </div>
 

@@ -34,7 +34,7 @@ Já o pinus, apesar de também ser uma madeira tratada com Polisten e muito boni
 Já as cadeiras, quando enviadas por transportadora, seguem pré-montadas para garantir mais segurança no transporte e facilitar a entrega. Nas entregas realizadas por nós, as cadeiras são entregues já montadas.`,
   },
   {
-    question: 'Qual capacidade de pessoas?',
+    question: 'Qual capacidade das mesas?',
     answer: `A capacidade varia conforme o tamanho do produto:
 
 • 1,50m: acomoda confortavelmente 6 pessoas, podendo chegar a 8 lugares utilizando as pontas da mesa.
@@ -64,7 +64,7 @@ const FAQSection = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-border">
-                <AccordionTrigger className="text-left text-lg font-serif font-medium text-heading hover:text-wood hover:no-underline py-5">
+                <AccordionTrigger className="text-left font-serif text-lg md:text-xl font-medium text-heading hover:text-wood hover:no-underline py-5">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-body whitespace-pre-line leading-relaxed">

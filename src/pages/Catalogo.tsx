@@ -2,21 +2,55 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactSection from '@/components/sections/ContactSection';
-import SectionHeading from '@/components/ui/SectionHeading';
+import img1 from '@/assets/catalogo/catalago-1.jpg'
+import img2 from '@/assets/catalogo/catalago-2.jpg'
+import img3 from '@/assets/catalogo/catalago-3.jpg'
+import img4 from '@/assets/catalogo/catalago-4.jpg'
+import img5 from '@/assets/catalogo/catalago-5.jpg'
+import img6 from '@/assets/catalogo/catalago-6.jpg'
+import img7 from '@/assets/catalogo/catalago-7.jpg'
+import img8 from '@/assets/catalogo/catalago-8.jpg'
 
 const catalogProducts = [
-  { name: 'Mesa de Jantar Peroba Rosa', category: 'Mesas' },
-  { name: 'Cadeira Clássica', category: 'Cadeiras' },
-  { name: 'Mesa de Centro Rústica', category: 'Mesinhas' },
-  { name: 'Banco de Madeira Maciça', category: 'Bancos' },
-  { name: 'Escrivaninha Executiva', category: 'Escrivaninhas' },
-  { name: 'Cadeira com Encosto Alto', category: 'Cadeiras' },
-  { name: 'Mesa Lateral Elegante', category: 'Mesinhas' },
-  { name: 'Pia de Banheiro Artesanal', category: 'Pias' },
-  { name: 'Mesa de Jantar 6 Lugares', category: 'Mesas' },
-  { name: 'Conjunto Cadeiras Dining', category: 'Cadeiras' },
-  { name: 'Banco Bar Alto', category: 'Bancos' },
-  { name: 'Escrivaninha Compacta', category: 'Escrivaninhas' },
+  { name: '', 
+    category: 'Cadeiras',
+    image: img1
+   },
+
+  { name: '',
+    category: 'Cadeiras',
+    image: img2
+   },
+
+  { name: '',
+     category: 'Cadeiras',
+     image: img3
+    },
+
+  { name: '',
+     category: 'Cadeiras',
+     image: img4
+    },
+
+  { name: '',
+     category: 'Banco que Vira Mesa',
+     image: img5
+    },
+
+  { name: '',
+     category: 'Banco que Vira Mesa',
+     image: img6
+    },
+     
+  { name: '',
+     category: 'Banco que Vira Mesa',
+     image: img7
+    },
+
+  { name: '',
+     category: 'Banco que Vira Mesa',
+     image: img8
+    },
 ];
 
 const Catalogo = () => {
@@ -57,27 +91,12 @@ const Catalogo = () => {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="group bg-card border border-border hover:border-wood/30 hover:shadow-card transition-all duration-300 overflow-hidden"
                 >
-                  {/* Image Placeholder */}
-                  <div className="aspect-[4/3] bg-secondary flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-secondary to-muted opacity-50" />
-                    <div className="relative z-10 text-center p-4">
-                      <div className="w-16 h-16 mx-auto mb-3 border border-wood/20 rounded-full flex items-center justify-center">
-                        <svg 
-                          className="w-8 h-8 text-wood/40"
-                          fill="none" 
-                          viewBox="0 0 24 24" 
-                          stroke="currentColor"
-                        >
-                          <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth={1.5} 
-                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" 
-                          />
-                        </svg>
-                      </div>
-                      <span className="text-xs text-muted-foreground">Imagem em breve</span>
-                    </div>
+                  <div className="aspect-[5/4] overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
 
                   {/* Product Info */}
@@ -85,9 +104,6 @@ const Catalogo = () => {
                     <span className="text-xs text-wood font-medium uppercase tracking-wider">
                       {product.category}
                     </span>
-                    <h3 className="font-serif text-lg font-medium text-heading mt-2 group-hover:text-wood transition-colors duration-300">
-                      {product.name}
-                    </h3>
                   </div>
                 </motion.div>
               ))}

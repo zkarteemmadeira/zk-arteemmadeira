@@ -3,9 +3,12 @@ import SectionHeading from '../ui/SectionHeading';
 import cadeiraEssencia from '@/assets/cadeira-adirondack-modelo-essencia.jpg';
 import cadeiraClassico from '@/assets/cadeira-adirondack-modelo-classico.jpg';
 import cadeiraPremium from '@/assets/cadeira-adirondack-modelo-premium.jpg';
-import bancoPremium from '@/assets/modelo-premium-eucalipto-banco.jpg';
-import bancoClassico from '@/assets/modelo-classico-eucalipto-banco.jpg';
-import bancoTradicional from '@/assets/modelo-tradicional-pinus-banco.jpg';
+import bancoPremium from '@/assets/modelo-premium-eucalipto-banco.png';
+import bancoClassico from '@/assets/modelo-classico-eucalipto-banco.png';
+import bancoTradicional from '@/assets/modelo-tradicional-pinus-banco.png';
+import mesaPremium from '@/assets/modelo-premium-eucalipto-mesa.png';
+import mesaClassico from '@/assets/modelo-classico-eucalipto-mesa.png';
+import mesaTradicional from '@/assets/modelo-tradicional-pinus-mesa.png';
 
 const products = [
   {
@@ -33,16 +36,16 @@ const products = [
     icon: bancoTradicional,
   },
   {
-    name: 'Banco que Vira mesa - Modelo Premium Eucalipto',
-    icon: bancoPremium,
+    name: 'Modelo Premium Eucalipto - Versão Mesa',
+    icon: mesaPremium,
   },
   {
-    name: 'Escrivaninhas',
-    icon: cadeiraPremium,
+    name: 'Modelo Classico Eucalipto - Versão Mesa',
+    icon: mesaClassico,
   },
   {
-    name: 'Pias de Banheiro',
-    icon: cadeiraPremium,
+    name: 'Modelo Tradicional Pinus - Versão Mesa',
+    icon: mesaTradicional,
   },
 ];
 

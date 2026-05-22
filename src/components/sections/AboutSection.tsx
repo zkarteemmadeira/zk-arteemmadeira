@@ -26,23 +26,23 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <p className="body-base text-body leading-[1.9]">
-              A <strong className="text-heading font-medium">ZK Arte em Madeira</strong> nasceu do 
-              amor pela madeira como matéria-prima nobre. 
-              Cada peça que produzimos carrega consigo a história de uma família dedicada ao ofício 
-              da marcenaria, transmitido de geração em geração.
+              Na <strong className="text-heading font-medium">ZK Arte em Madeira</strong> acreditamos que móveis vão 
+              muito além da funcionalidade. Cada peça carrega cuidado, dedicação e atenção aos detalhes.
             </p>
 
             <p className="body-base text-body leading-[1.9]">
-              Nosso compromisso vai além da simples fabricação de móveis. Buscamos criar obras que 
-              transformam ambientes e perduram por gerações. Utilizamos técnicas tradicionais aliadas 
-              a acabamentos contemporâneos, garantindo peças únicas que unem <em className="text-wood not-italic font-medium">funcionalidade</em>, 
-              <em className="text-wood not-italic font-medium"> durabilidade</em> e <em className="text-wood not-italic font-medium">beleza atemporal</em>.
+              Somos uma empresa familiar apaixonada pela marcenaria artesanal, unindo beleza, conforto e durabilidade
+               em móveis de madeira maciça, sempre com foco na qualidade do acabamento.
             </p>
 
             <p className="body-base text-body leading-[1.9]">
-              Trabalhamos com madeiras selecionadas, respeitando as características 
-              únicas de cada tora. O resultado são móveis que não apenas mobiliam, mas contam histórias 
-              e trazem a alma da madeira para dentro do seu lar.
+              Acompanhamos todo o processo de perto, da produção ao atendimento, porque acreditamos que qualidade e um 
+              atendimento próximo fazem toda a diferença.
+            </p>
+            
+            <p className="body-base text-body leading-[1.9]">
+              Mais do que fabricar móveis, queremos criar peças aconchegantes e funcionais, feitas para transformar ambientes 
+              em espaços de convivência e bons momentos.
             </p>
           </motion.div>
 
