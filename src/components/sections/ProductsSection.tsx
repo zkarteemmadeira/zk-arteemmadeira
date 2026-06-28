@@ -149,7 +149,7 @@ const ProductsSection = () => {
                     {produtoSelecionado.name}
                   </h2>
                   <p className="text-body mb-8 text-lg">
-                    Peça com design exclusivo e acabamento artesanal de alto padrão. Perfeita para transformar o seu ambiente com elegância e durabilidade. Fabricação sob medida.
+                    Peça com design exclusivo e acabamento artesanal de alto padrão. Perfeita para transformar o seu ambiente com elegância e durabilidade.
                   </p>
                 </div>
 
