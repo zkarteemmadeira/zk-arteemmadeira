@@ -12,7 +12,6 @@ const HeroSection = () => {
           alt="Móveis em madeira de alta qualidade" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/35 via-background/30 to-background/25" />
       </div>
 
       <div className="container-premium relative z-10 pt-24 pb-16">
