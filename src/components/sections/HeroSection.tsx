@@ -15,7 +15,8 @@ const HeroSection = () => {
       </div>
 
       <div className="container-premium relative z-10 pt-24 pb-16">
-        <div className="max-w-3xl">
+        {/* Caixa com Efeito Vidro para destacar o texto sem esconder o resto da foto */}
+        <div className="max-w-3xl bg-background/70 backdrop-blur-md p-8 md:p-12 rounded-3xl shadow-xl border border-white/20">
           {/* Decorative line */}
           <motion.div
             initial={{ scaleX: 0 }}
@@ -70,14 +71,14 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator - Com fundo adaptado para não sumir na foto */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.2 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
-        <div className="w-6 h-10 border border-wood/30 rounded-full flex items-start justify-center p-2">
+        <div className="w-6 h-10 border border-wood/30 rounded-full flex items-start justify-center p-2 bg-background/50 backdrop-blur-sm">
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
