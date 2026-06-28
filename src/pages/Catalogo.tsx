@@ -25,10 +25,10 @@ const catalogProducts = [
   { name: 'Modelo Tradicional Pinus', category: 'Banco que Vira Mesa', image: img6 },
   { name: 'Modelo Tradicional Pinus', category: 'Banco que Vira Mesa', image: img7 },
   { name: 'Madeira de Eucalipto Modelo Premium', category: 'Banco que Vira Mesa', image: img8 },
-  { name: '', category: 'Cadeiras', image: img9 },
-  { name: '', category: 'Cadeiras', image: img10 },
-  { name: '', category: 'Banco que Vira Mesa', image: img11 },
-  { name: '', category: 'Banco que Vira Mesa', image: img12 },
+  { name: 'Cadeira Adirondack Essência', category: 'Cadeiras', image: img9 },
+  { name: 'Cadeira Adirondack Premium', category: 'Cadeiras', image: img10 },
+  { name: 'Madeira de Eucalipto Modelo Clássico', category: 'Banco que Vira Mesa', image: img11 },
+  { name: 'Madeira de Eucalipto Modelo Clássico', category: 'Banco que Vira Mesa', image: img12 },
 ];
 
 const Catalogo = () => {
